@@ -59,3 +59,11 @@ k8s-master-37126794-2       Ready     master    19h       v1.8.7
 ```
 
 
+#### Install into bashrc (Linux) for easy access
+
+Setup an alias for `kubecfg`
+
+```
+echo "alias kubecfg='docker run -it --rm -v $PWD:/data aimvector/kube-cfg:v1.0.0'" >> ~/.bashrc
+
+```
